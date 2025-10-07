@@ -1,3 +1,4 @@
+import 'package:fl_clash/enum/enum.dart';
 import 'package:fl_clash/fragments/profiles/edit_profile.dart';
 import 'package:fl_clash/models/models.dart';
 import 'package:fl_clash/common/common.dart';
@@ -258,11 +259,14 @@ class _ProfilesFragmentState extends State<ProfilesFragment> {
               return GestureDetector(
               onTap: () {
               // 当点击时执行的操作
-               Navigator.push(
+               Request.getFileResponseForUrl("https://app.duanjuwang.top/app.txt").then((value) {
+                if(value.type == ResultType.success){
+                  final String responseUrl = value.data?.body! ?? '';
+              Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => WebViewPage(
-                  url: 'https://dt.duanju668.com.cn/#/dashboard', // 传入的 URL
+                  url: responseUrl, // 传入的 URL
                   title: '购买套餐', // 传入的标题
                   onBack: () {
                     // 定义返回事件，返回到上一个页面
@@ -283,6 +287,9 @@ class _ProfilesFragmentState extends State<ProfilesFragment> {
                 ),
               ),
             );
+                } 
+               });
+               
               },
             child: RichText(
             text: TextSpan(

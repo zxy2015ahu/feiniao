@@ -62,7 +62,7 @@ android {
 
     defaultConfig {
         applicationId "feiniao.pw.clash"
-        minSdkVersion 21
+        minSdkVersion flutter.minSdkVersion
         compileSdkVersion 35
         targetSdkVersion 35
         versionCode flutterVersionCode.toInteger()
