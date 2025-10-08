@@ -10,7 +10,7 @@ import 'system.dart';
 class Window {
   init() async {
     if (Platform.isWindows) {
-      await WindowsSingleInstance.ensureSingleInstance([], "FlClash");
+      await WindowsSingleInstance.ensureSingleInstance([], "FeiNiao");
       protocol.register("clash");
       protocol.register("clashmeta");
       protocol.register("flclash");

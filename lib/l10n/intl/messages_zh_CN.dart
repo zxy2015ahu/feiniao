@@ -155,7 +155,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "trafficUsage": MessageLookupByLibrary.simpleMessage("流量统计"),
         "tun": MessageLookupByLibrary.simpleMessage("虚拟网络设备"),
         "tunDesc": MessageLookupByLibrary.simpleMessage("仅在管理员模式生效"),
-        "goumaiDesc": MessageLookupByLibrary.simpleMessage("您目前没有生效的套餐，您可以点击这里"),
+        "goumaiDesc": MessageLookupByLibrary.simpleMessage("您目前没有生效的套餐，您可以点击这里\n或右下角“+”号"),
         "guanwang": MessageLookupByLibrary.simpleMessage("官网"),
         "unableToUpdateCurrentProfileDesc":
             MessageLookupByLibrary.simpleMessage("无法更新当前配置文件"),

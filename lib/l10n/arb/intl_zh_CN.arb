@@ -23,7 +23,7 @@
   "noProxy": "暂无代理",
   "noProxyDesc": "请创建配置文件或者添加有效配置文件",
   "nullProfileDesc": "没有配置文件,请先添加配置文件",
-  "goumaiDesc": "您目前没有生效的套餐，您可以点击这里",
+  "goumaiDesc": "您目前没有生效的套餐，您可以点击这里\n或右下角“+”号",
   "goumaiNew": "购买新的套餐",
   "guanwang": "官网",
   "nullLogsDesc": "暂无日志",

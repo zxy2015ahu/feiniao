@@ -90,7 +90,7 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "feiniao.pw" "\0"
-            VALUE "FileDescription", "FlClash" "\0"
+            VALUE "FileDescription", "FeiNiao" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "clash" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 feiniao.pw. All rights reserved." "\0"
