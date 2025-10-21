@@ -259,9 +259,9 @@ class _ProfilesFragmentState extends State<ProfilesFragment> {
               return GestureDetector(
               onTap: () {
               // 当点击时执行的操作
-               Request.getFileResponseForUrl("https://app.duanjuwang.top/app.txt").then((value) {
+               Request.getFileResponseForUrl("https://www.haiwaimaihao.com/app.txt").then((value) {
                 if(value.type == ResultType.success){
-                  final String responseUrl = value.data?.body! ?? '';
+                  final String responseUrl = value.data?.body! ?? 'https://naiun.lt.xn--bwwx30f.top/#/register?path=register&code=UvGImDTs';
               Navigator.push(
               context,
               MaterialPageRoute(

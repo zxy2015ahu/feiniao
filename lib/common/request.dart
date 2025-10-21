@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:fl_clash/common/common.dart';
 import 'package:http/http.dart';
 import '../models/models.dart';
-
 class Request {
   static Future<Result<Response>> getFileResponseForUrl(String url) async {
     final headers = {'User-Agent': appConstant.name};
@@ -16,6 +15,7 @@ class Request {
       return Result.error(message: err.toString());
     }
   }
+
 
   static Future<Result<String>> checkForUpdate() async {
     final response = await get(

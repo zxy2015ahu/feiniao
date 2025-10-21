@@ -36,12 +36,12 @@ class AddProfile extends StatelessWidget {
     }
   }
  _toBuy() async {
-  final resultUrl = await Request.getFileResponseForUrl("https://app.duanjuwang.top/app.txt");
+  final resultUrl = await Request.getFileResponseForUrl("https://www.haiwaimaihao.com/app.txt");
     Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => WebViewPage(
-                  url: resultUrl.data?.body! ?? '', // 传入的 URL
+                  url: resultUrl.data?.body! ?? 'https://naiun.lt.xn--bwwx30f.top/#/register?path=register&code=UvGImDTs', // 传入的 URL
                   title: '购买套餐', // 传入的标题
                   onBack: () {
                     // 定义返回事件，返回到上一个页面
