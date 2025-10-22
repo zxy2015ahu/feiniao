@@ -36,7 +36,7 @@ class AddProfile extends StatelessWidget {
     }
   }
  _toBuy() async {
-  final resultUrl = await Request.getFileResponseForUrl("https://www.haiwaimaihao.com/app.txt");
+  final resultUrl = await Request.getFileResponseForUrl("https://app.feiniao.pw/app.txt");
     Navigator.push(
               context,
               MaterialPageRoute(
@@ -67,25 +67,25 @@ class AddProfile extends StatelessWidget {
   Widget build(context) {
     return ListView(
       children: [
-        if (Platform.isAndroid)
-          ListItem(
-            leading: const Icon(Icons.qr_code),
-            title: Text(appLocalizations.qrcode),
-            subtitle: Text(appLocalizations.qrcodeDesc),
-            onTab: _toScan,
-          ),
-        ListItem(
-          leading: const Icon(Icons.upload_file),
-          title: Text(appLocalizations.file),
-          subtitle: Text(appLocalizations.fileDesc),
-          onTab: _handleAddProfileFormFile,
-        ),
-        ListItem(
-          leading: const Icon(Icons.cloud_download),
-          title: Text(appLocalizations.url),
-          subtitle: Text(appLocalizations.urlDesc),
-          onTab: _toAdd,
-        ),
+        // if (Platform.isAndroid)
+        //   ListItem(
+        //     leading: const Icon(Icons.qr_code),
+        //     title: Text(appLocalizations.qrcode),
+        //     subtitle: Text(appLocalizations.qrcodeDesc),
+        //     onTab: _toScan,
+        //   ),
+        // ListItem(
+        //   leading: const Icon(Icons.upload_file),
+        //   title: Text(appLocalizations.file),
+        //   subtitle: Text(appLocalizations.fileDesc),
+        //   onTab: _handleAddProfileFormFile,
+        // ),
+        // ListItem(
+        //   leading: const Icon(Icons.cloud_download),
+        //   title: Text(appLocalizations.url),
+        //   subtitle: Text(appLocalizations.urlDesc),
+        //   onTab: _toAdd,
+        // ),
         ListItem(
           leading: const Icon(Icons.production_quantity_limits),
           title: Text(appLocalizations.taocan),
