@@ -10,7 +10,7 @@ import 'package:provider/provider.dart';
 import 'controller.dart';
 import 'models/models.dart';
 import 'pages/pages.dart';
-
+import 'package:umeng_common_sdk/umeng_common_sdk.dart';
 runAppWithPreferences(
   Widget child, {
   required AppState appState,
@@ -68,6 +68,8 @@ class ApplicationState extends State<Application> {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
       appController.afterInit();
       appController.initLink();
+      UmengCommonSdk.initCommon("68e6ffea8560e34872c2ba2c", "68f999c3644c9e2c206025de", "Umeng");
+      UmengCommonSdk.setPageCollectionModeManual();
     });
   }
 
